@@ -26,10 +26,10 @@ async function getNumberFact(number) {
   let n3 = await num3;
   // append the data from each response as a list item to an <ul id="numbers">
   $('#numbers').append(`<li class="list-group-item active">${n.data.number}</li>`);
-  $('#numbers').append(`<li class="list-group-item list-group-item-success">${n.data.text}</li>`);
-  $('#numbers').append(`<li class="list-group-item list-group-item-success">${n1.data.text}</li>`);
-  $('#numbers').append(`<li class="list-group-item list-group-item-success">${n2.data.text}</li>`);
-  $('#numbers').append(`<li class="list-group-item list-group-item-success">${n3.data.text}</li>`);
+  $('#numbers').append(`<li class="list-group-item list-group-item-dark">${n.data.type}</li><li class="list-group-item list-group-item-success">${n.data.text}</li>`);
+  $('#numbers').append(`<li class="list-group-item list-group-item-dark">${n1.data.type}</li><li class="list-group-item list-group-item-success">  ${n1.data.text}</li>`);
+  $('#numbers').append(`<li class="list-group-item list-group-item-dark">${n2.data.type}</li><li class="list-group-item list-group-item-success">  ${n2.data.text}</li>`);
+  $('#numbers').append(`<li class="list-group-item list-group-item-dark">${n3.data.type}</li><li class="list-group-item list-group-item-success">  ${n3.data.text}</li>`);
   $('#numbers').append(`<a href="" class="btn btn-danger">Reset</a>`);
 }
 // ! END NUMBER FACT GENERATOR MACHINE
